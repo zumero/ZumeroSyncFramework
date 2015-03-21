@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.zumero.sync.ios" version="2.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" >
+    <name>ZumeroSyncFramework</name>
+    <license>Apache 2.0</license>
+    <keywords>zumero,sqlite,sync</keywords>
+
+	<repo>https://github.com/zumero/ZumeroSyncFramework.git</repo>
+
+	<engines>
+		<engine name="cordova" version=">=3.0.0" />
+	</engines>
+
+	<platform name="ios">
+		<framework src="src/ios/ZumeroSync.framework" custom="true" />
+
+        <framework src="libz.dylib" />
+        <framework src="libsqlite3.dylib" />
+        <framework src="CFNetwork.framework" />
+	</platform>
+</plugin>
